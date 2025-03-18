@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    display: flex;
+    gap: 50px;
+
+    & img {
+        width: 50%;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    & .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+
+        & .login {
+            width: 504px;
+            border: #878787 0.5px solid;
+            border-radius: 10px;
+            padding: 35px;
+
+            & header {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin-bottom: 26px;
+
+                & p {
+                    font-size: 25px;
+                    font-weight: 200;
+                }
+
+                & .title {
+
+                    & h1 {
+                        font-size: 31px;
+                        font-weight: 500;
+                    }
+
+                    & p {
+                        width: 260px;
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            & form {
+                display: flex;
+                flex-direction: column;
+                gap: 38px;
+
+                & .input-user {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 9px;
+
+                    & .icone {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding-right: 27.7px;
+                        border-radius: 6px;
+                        border: #282828bf 0.6px solid;
+
+                        & input {
+                            border: none;
+                        }
+
+
+                        & img {
+                            width: 21px;
+                            height: 21px;
+                        }
+                    }
+
+                    & input {
+                        padding: 19px 27.7px;
+                        border: #282828bf 0.6px solid;
+                        border-radius: 6px;
+                    }
+                }
+
+                & .input-user-checkbox {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                & input[type=submit] {
+                    background-color: #111111;
+                    color: #fff;
+                    padding: 18px;
+                    border-radius: 6px;
+                    border: none;
+                    cursor: pointer;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
